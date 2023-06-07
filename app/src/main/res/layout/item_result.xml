@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:paddingStart="@dimen/_5sdp"
+        android:paddingEnd="@dimen/_5sdp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_marginStart="@dimen/_5sdp"
+            android:id="@+id/tv_res_num"
+            android:textAlignment="textStart"
+            android:textColor="?colorTitle"
+            android:text="@string/_01"
+            android:textSize="@dimen/_13ssp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <ImageView
+            android:padding="@dimen/_2sdp"
+            android:layout_marginStart="@dimen/_5sdp"
+            android:id="@+id/iv_res_image"
+            android:layout_width="@dimen/_75sdp"
+            android:layout_height="@dimen/_70sdp"
+            android:scaleType="centerInside"
+            android:src="@drawable/material_design_default"
+            android:contentDescription="@string/todo" />
+
+        <TextView
+            android:layout_marginStart="@dimen/_5sdp"
+            android:id="@+id/tv_res_question"
+            android:textStyle="bold"
+            android:textAlignment="textStart"
+            android:textColor="?colorTitle"
+            android:text="@string/app_name"
+            android:textSize="@dimen/_13ssp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_marginTop="@dimen/_5sdp"
+        android:id="@+id/tv_res_not_answer"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:layout_marginEnd="@dimen/_10sdp"
+        android:layout_gravity="start"
+        android:textColor="@color/color_check_error"
+        android:text="@string/not_answered"
+        android:textSize="@dimen/_12ssp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingStart="@dimen/_10sdp"
+        android:paddingEnd="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_10sdp">
+
+        <ImageView
+            android:id="@+id/iv_res_answer_1"
+            android:scaleType="centerInside"
+            android:layout_width="@dimen/_20sdp"
+            android:layout_height="@dimen/_20sdp"
+            android:src="@drawable/ic_remove_outline"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:contentDescription="@string/todo" />
+
+        <TextView
+            android:id="@+id/tv_res_answer_1"
+            android:layout_gravity="center"
+            android:textColor="@color/color_check_error"
+            android:text="@string/no_entry_on_event_days"
+            android:textSize="@dimen/_12ssp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingStart="@dimen/_10sdp"
+        android:paddingEnd="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_5sdp">
+
+        <ImageView
+            android:id="@+id/iv_res_answer_2"
+            android:scaleType="centerInside"
+            android:layout_width="@dimen/_20sdp"
+            android:layout_height="@dimen/_20sdp"
+            android:src="@drawable/ic_unchecked"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:contentDescription="@string/todo" />
+
+        <TextView
+            android:id="@+id/tv_res_answer_2"
+            android:layout_gravity="center"
+            android:textColor="?colorTitle"
+            android:text="@string/no_overtaking"
+            android:textSize="@dimen/_12ssp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingStart="@dimen/_10sdp"
+        android:paddingEnd="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_5sdp">
+
+        <ImageView
+            android:id="@+id/iv_res_answer_3"
+            android:scaleType="centerInside"
+            android:layout_width="@dimen/_20sdp"
+            android:layout_height="@dimen/_20sdp"
+            android:src="@drawable/ic_check"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:contentDescription="@string/todo" />
+
+        <TextView
+            android:id="@+id/tv_res_answer_3"
+            android:layout_gravity="center"
+            android:textColor="@color/color_check_in"
+            android:text="@string/no_parking_on_even_days"
+            android:textSize="@dimen/_12ssp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingStart="@dimen/_10sdp"
+        android:paddingEnd="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_5sdp">
+
+        <ImageView
+            android:id="@+id/iv_res_answer_4"
+            android:scaleType="centerInside"
+            android:layout_width="@dimen/_20sdp"
+            android:layout_height="@dimen/_20sdp"
+            android:src="@drawable/ic_unchecked"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:contentDescription="@string/todo" />
+
+        <TextView
+            android:id="@+id/tv_res_answer_4"
+            android:layout_gravity="center"
+            android:textColor="?colorTitle"
+            android:text="@string/no_waiting_on_even_days"
+            android:textSize="@dimen/_12ssp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+    <View
+        android:layout_marginTop="@dimen/_15sdp"
+        android:layout_marginBottom="@dimen/_15sdp"
+        android:background="?colorBorder"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/_1sdp"/>
+
+</LinearLayout>

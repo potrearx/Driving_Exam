@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/bg_card"
+    android:layout_margin="@dimen/_3sdp">
+
+    <com.makeramen.roundedimageview.RoundedImageView
+        app:riv_corner_radius="@dimen/_5sdp"
+        android:id="@+id/iv_signs"
+        android:layout_width="@dimen/_130sdp"
+        android:layout_height="@dimen/_130sdp"
+        android:scaleType="centerInside" />
+
+</RelativeLayout>

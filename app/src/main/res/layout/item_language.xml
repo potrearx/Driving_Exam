@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_item_language"
+    android:layout_width="match_parent"
+    android:layout_margin="@dimen/_5sdp"
+    android:background="@drawable/bg_language"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:layout_marginTop="@dimen/_5sdp"
+        android:layout_marginBottom="@dimen/_5sdp"
+        android:id="@+id/tv_item_language"
+        android:textColor="?colorTitle"
+        android:textSize="@dimen/_15ssp"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:text="@string/app_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+</RelativeLayout>

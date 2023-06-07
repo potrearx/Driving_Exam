@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.LanguageActivity"
+    android:background="?colorBackground">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?colorBackground"
+        android:minHeight="?attr/actionBarSize"
+        app:title="Select Language"
+        app:titleTextColor="?colorBackgroundTint" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/toolbar"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true">
+
+        <ImageView
+            android:layout_centerInParent="true"
+            android:id="@+id/iv_refresh"
+            android:layout_width="@dimen/_35sdp"
+            android:layout_height="@dimen/_35sdp"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:background="@drawable/bar_selector"
+            android:contentDescription="@string/todo"
+            android:padding="@dimen/_5sdp"
+            android:src="@drawable/ic_refresh"
+            app:tint="?colorBackgroundTint" />
+
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/iv_lan"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_below="@+id/toolbar"
+        android:layout_centerHorizontal="true"
+        android:contentDescription="@string/todo"
+        android:padding="20dp"
+        android:src="@drawable/ic_translation"
+        app:tint="?colorBackgroundTint"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/ll_bottom"
+        android:layout_below="@id/iv_lan" />
+
+    <FrameLayout
+        android:id="@+id/fl_empty"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/iv_lan"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="?attr/actionBarSize"
+        android:visibility="gone" />
+
+    <ProgressBar
+        android:id="@+id/pb"
+        android:layout_width="@dimen/_40sdp"
+        android:layout_height="@dimen/_40sdp"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="@dimen/_15sdp"
+        android:progressTint="?colorAccent" />
+
+    <LinearLayout
+        android:id="@+id/ll_bottom"
+        android:background="?colorBackground"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_lan"
+            android:background="@drawable/bg_button_normal"
+            android:textSize="@dimen/_17sdp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:text="No Select"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_40sdp"/>
+
+    </LinearLayout>
+
+</RelativeLayout>
